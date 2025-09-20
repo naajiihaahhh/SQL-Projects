@@ -23,7 +23,7 @@ Together, this dataset gives a **holistic view of customer activity and bussines
 ## 👉Business Problem Statement
 Although FoodPanda collect large amounts of data, the buisness faces challenges is using it effectively to: 
 - Identify reasons for **customer churn** and improve retention
-- -Determine **top-performing restaurants and dishes**
+- Determine **top-performing restaurants and dishes**
 - Monitor and reduce **delayed or cancelled deliveries**
 - Design better **promotions and loyalty programs**
 
