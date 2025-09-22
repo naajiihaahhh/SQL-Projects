@@ -1,61 +1,60 @@
 # Foodpanda SQL Project
 
-## 📝Context 
-This project analyzes **6,000 Foodpanda Records** , integrating cstomer information, order history, payments, and ratings. The dataset provides insights into user behavior, reaturant performance, and engagement patterns, which are useful for studying customer churn, spending habits, restaurant and food popularity, and delivery efficiency. 
+## 📝 Context 
+This project analyzes 6,000 Foodpanda records, integrating customer information, order history, payments, and ratings. The dataset provides insights into user behavior, restaurant performance, and engagement patterns, which are useful for studying customer churn, spending habits, restaurant and food popularity, and delivery efficiency. 
 
 ---
 
-## 💹Dataset Content 
-Columns : customer_id, gender, age, city, signup_date, order_id, order_date, restaurant_name, dish_name, category, quantity, price, payment_method, order_frequency, last_order_date_loyalty_points, churned, rating, rating_date, delivery_status
-- **Customer Demographics**
-    - Gender, age range, city, signup_date, churn status
-- **Order_Level Data**
-    - Restaurant names, dishes, categories, quantities, prices, delivery results
-- **Engagement etrics**
-    - Order frequency, last order date, loyalty points
-- **Feedback & Payments**
+## 💹 Dataset Content 
+Columns: customer_id, gender, age, city, signup_date, order_id, order_date, restaurant_name, dish_name, category, quantity, price, payment_method, order_frequency, last_order_date, loyalty_points, churned, rating, rating_date, delivery_status  
+
+- Customer Demographics  
+    - Gender, age range, city, signup_date, churn status  
+- Order-Level Data  
+    - Restaurant names, dishes, categories, quantities, prices, delivery results  
+- Engagement Metrics  
+    - Order frequency, last order date, loyalty points  
+- Feedback & Payments  
     - Ratings, payment method
  
-Together, this dataset gives a **holistic view of customer activity and bussiness performance** in a food delivery platform.
+Together, this dataset gives a holistic view of customer activity and business performance in a food delivery platform.
 
 ---
 
-## 👉Business Problem Statement
-Although FoodPanda collect large amounts of data, the buisness faces challenges is using it effectively to: 
-- Identify reasons for **customer churn** and improve retention
-- Determine **top-performing restaurants and dishes**
-- Monitor and reduce **delayed or cancelled deliveries**
-- Design better **promotions and loyalty programs**
+## 👉 Business Problem Statement
+Although Foodpanda collects large amounts of data, the business faces challenges in using it effectively to:  
+- Identify reasons for customer churn and improve retention  
+- Determine top-performing restaurants and dishes  
+- Monitor and reduce delayed or cancelled deliveries  
+- Design better promotions and loyalty programs
+
+---
+## 🚀 Project Objectives  
+Use SQL to transform raw Foodpanda data into actionable insights that help the business improve customer satisfaction and delivery efficiency.  
 
 ---
 
-## 🚀Project Objectives
-Use SQL to tranform raw FoodPanda data into actionabl insights that help the business improve **customer satisfaction and delivery efficiency**. 
+## 🔍 SQL Analysis Scope  
+This project answers key business questions such as:  
+1. What are the top 3 restaurants by revenue and average rating?  
+2. What is the customer churn rate, and which groups are most affected?  
+3. Which city has the highest frequency of orders?  
+4. Which restaurants have the highest % of delayed deliveries?  
+5. What are the most popular dishes and cuisines?  
+6. How do monthly order trends change over time?  
 
 ---
 
-## 🔍SQL Analysis Scope 
-This project answers key business questions such as:
-1. What are the **top 3 restaurants** by revenue and average rating?
-2. What is the **customer churn rate**, and which groups are most affected?
-3. What is the **average order values** by city, gender, age group?
-4. Which restaurants have the **highest % if delyed deliveries**?
-5. What are the **most popular dishes and cuisines**?
-6. How do **monthly order trends** change over time?
+## ✔️ Key Skills and Tools  
+- SQL (SELECT, WHERE, GROUP BY, CTEs, ORDER BY, Window Functions)  
+- Data Cleaning and Transformation  
+- Business Analysis and Insight Generation  
 
 ---
 
-## ✔️Key Skills and  Tools
-- SQL (SELECT, WHERE, GROUP BY, CTEs, ORDER BY, Window Functions)
-- Data Cleaning and Transformation
-- Business Analysis and Insight Generation
-
----
-
-## 👨‍🔧Data Cleaning Process 
-- Create new table with a copy of the original table to do the Data Cleaning and Standardizing without affecting the original data
-- Converted date into YYYY-mm-dd , from text to date format
-
+## 👨‍🔧 Data Cleaning Process  
+- Created a new table as a copy of the original dataset to perform data cleaning and standardization without affecting raw data.  
+- Converted date columns from text into YYYY-MM-DD format.
 --- 
 ## 🔍Exploratory Analysis
 1. What are the **top 3 restaurants** by revenue and average rating?
@@ -98,7 +97,7 @@ Results:
 <img src="https://github.com/user-attachments/assets/ff67064d-ad7d-443e-81c2-0824bbf241d9" width="365" height="130">
 
 
-3. What is the **city with highest frequency order** ?
+3. Which **city with highest frequency order** ?
 
 SQL Code:
  
@@ -124,7 +123,7 @@ Results:
 
 
 
-4.  What are the ranking of restaurants with the **highest % if delayed deliveries**?
+4.  What are the ranking of restaurants with the **highest % of delayed deliveries**?
 
 SQL Code:
 ```SQL
@@ -213,13 +212,31 @@ Results:
 
 <img src="https://github.com/user-attachments/assets/ce72302e-a894-4e83-b452-f5a61cb91045" width="180" height="320">
 
-## 🔑Key Insights
-1. **Subway leads in business performance** — it records the highest revenue with strong average ratings, followed by Burger King and McDonald's.
-2. **Customer satisfaction drives revenue** — average ratings show a positive correlation with total revenue.
-3. **Retention challenges differ by age group** — teenagers represent the largest group of inactive users, while adults have the highest churn rate.
-4. **City-level loyalty patterns** — Lahore customers demonstrate the strongest repeat purchase behavior, while Islamabad shows the lowest order frequency.
-5. **Operational efficiency concerns** — KFC faces the highest number of delayed deliveries.
-6. **Evolving preferences** — Fast Food re-emerged as the most popular cuisine in 2025.
-7. **Customer experience stability** — overall ratings remain steady, ranging between 2.9 and 3.1.
+## 🔑 Key Insights  
+1. Subway leads in business performance — it records the highest revenue with strong average ratings, followed by Burger King and McDonald's.  
+2. Customer satisfaction drives revenue — average ratings show a positive correlation with total revenue.  
+3. Retention challenges differ by age group — teenagers represent the largest group of inactive users, while adults have the highest churn rate.  
+4. City-level loyalty patterns — Lahore customers demonstrate the strongest repeat purchase behavior, while Islamabad shows the lowest order frequency.  
+5. Operational efficiency concerns — KFC faces the highest number of delayed deliveries.  
+6. Evolving preferences — Fast Food re-emerged as the most popular cuisine in 2025.  
+7. Customer experience stability — overall ratings remain steady, ranging between 2.9 and 3.1.  
+
+---
+
+## 💡 Recommendations  
+1. Targeted Retention Strategies  
+- Offer loyalty rewards and tailored promotions for adults and teenagers to reduce churn.  
+
+2. Restaurant Performance Management  
+- Partner closely with high-revenue restaurants while supporting underperforming ones to improve quality and customer experience.  
+
+3. Operational Improvements  
+- Investigate and resolve delivery delay issues with restaurants like KFC to reduce inefficiency.  
+
+4. City-Based Campaigns  
+- Boost engagement in Islamabad through targeted campaigns, while leveraging Lahore's loyal customer base with premium offers.  
+
+5. Product Development & Marketing  
+- Promote fast food offerings to align with 2025 trends, while diversifying menus to maintain long-term customer interest.
 
 
